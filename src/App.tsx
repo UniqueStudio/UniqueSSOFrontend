@@ -1,21 +1,13 @@
-import { Route, Routes, Navigate } from 'react-router-dom'
-import routes from '@/routes'
+import { RouterProvider } from 'react-router-dom'
+import { router } from '@/routes'
+import MainLayout from '@/layouts/MainLayout'
 import './App.scss'
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Navigate to='/home' replace />} />
-      {routes.map((item, i) => {
-        return (
-          <Route
-            key={i}
-            path={item.path as string}
-            element={<item.element />}
-          />
-        )
-      })}
-    </Routes>
+    <MainLayout>
+      <RouterProvider router={router} />
+    </MainLayout>
   )
 }
 

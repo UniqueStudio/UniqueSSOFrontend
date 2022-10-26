@@ -41,8 +41,8 @@
       "@/network/*": ["src/network/*"],
       "@/constants/*": ["src/constants/*"],
       "@/plugins/*": ["src/plugins/*"],
-      "@/types/*": ["src/types"],
-      "@/enums/*": ["src/enums"]
+      "@/configs/*": ["src/configs"],
+      "@/layouts/*": ["src/layouts"]
     }
   },
   "include": ["src", "tests"],
